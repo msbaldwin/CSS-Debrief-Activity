@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+ <link rel="stylesheet" href="./assets/css/style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
     <!-- Navigation -->
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Concert Schedule</a></li>
-        <li><a href="#">Order Tickets</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#about-blurb">Home</a></li>
+        <li><a href="#concert-schedule-sec">Concert Schedule</a></li>
+        <li><a href="#ticket-form-sec">Order Tickets</a></li>
+        <li><a href="#stay">Contact Us</a></li>
       </ul>
     </nav>
 
@@ -38,7 +42,7 @@
 
         <div>
           <figure>
-            <img src="./assets/images/harrystyles.png" alt="harrystyles" width="1000">
+            <img src="./assets/images/harrystyles.png" alt="harrystyles">
             <!-- Figcaption element to caption your image -->
             <figcaption>
             Harry Styles performing free concert fundraiser for US wildfire relief
@@ -49,12 +53,17 @@
         <!-- Aside Content -->
           <aside>
             <p class="center-title">Facts</p>
-            <ul>
+            <ul class="information">
                 <li>Born: February 1, 1994 (age 28 years)</li>
                 <li>From Redditch, United Kingdom</li>
                 <li>Height: 6'0"</li>
                 <li>Music Group: One Direction (since 2010)</li>
-                <li><a href="">See Movies</a></li>
+                <br>
+                <p class="center-title">See Movies</p>
+                <br>
+            <li><a href="https://www.imdb.com/title/tt10731256/">Don't Worry Darling</a></li>
+            <li><a href="https://www.imdb.com/title/tt9032400/">Eternals</a></li>
+            <li><a href="https://www.imdb.com/title/tt13139228/">My Policeman</a></li>
             </ul>
           </aside>
         </div>
@@ -137,7 +146,7 @@
           <label for="us mail">us mail</label>
           <br>
 
-          <h4 class="center-title">Stay In Touch!</h4>
+          <h4 class="center-title" id="stay">Stay In Touch!</h4>
           <p>Send us a message -- keep us up to date with new things about Harry, or tell us about your user expereince on the site.</p>
           <!-- Textbox -->
           <label for="message"></label>

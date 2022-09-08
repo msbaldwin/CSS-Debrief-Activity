@@ -1,5 +1,12 @@
+*{ 
+	box-sizing: border-box;
+}
 
 body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: linear-gradient(whitesmoke),rgb(35,47,58);
+
+	
 
 }
 
@@ -17,11 +24,13 @@ nav li {
 li a {
 	display: block;
 	color: white;
-	padding: 30px 30px 30px 30px;
+	padding: 30px;
 	text-decoration: none;
+	text-align: center;
 }
 li a:hover {
-	background-color: rgb(40, 39, 39);
+	background-color: #bbe4e9;
+	color:black;
 }
 
 /* Header Styles */
@@ -39,18 +48,49 @@ h1 {
 section {
 	display: flex;
 	justify-content: center;
-
+	flex-direction: column;
 	width: 80%;
 	margin: auto;
 }
 .center-title {
+text-align: center;
 
+
+}
+.information{
+	color: black;
 }
 
 /* About Section Styles */
 #about-sec {
 	display: flex;
+	flex-direction: column;
 
+}
+#about-sec h2{
+	font-size: 1.95em;
+	padding: 0 1.5em;
+
+}
+#about-sec{
+	padding: 0 2.5em;
+	background-color: #79c2d0;
+	margin: 0 auto;
+	padding: 2em;
+	height: max-content;
+	width: 100%;
+	
+	
+	
+
+}
+
+#about-blurb{
+	padding: 0 2.5em;
+	text-align: left;
+	word-spacing: 0.3em;
+	font-size: 1.5em;
+	font-family:'Times New Roman', Times, serif
 }
 #about-sec div {
 	display: inline-flex;
@@ -60,21 +100,69 @@ section {
 }
 figure {
 	display: flex;
+	width: 30%;
+	flex-direction: column; 
 
+}
+
+figcaption{
+	property-value pair;
+	background-color: rgba(35,47,58);
+	color: whitesmoke;
+padding: 0.25em;
+opacity: 0.5;
+font-size: 0.85em;
 }
 
 /* Aside Styles */
 aside {
 	display: flex;
 	flex-direction: column;
+	border: 4px double black;
+	margin: 1em 0;
+	color: rgba(35, 47, 58, 0.05);
+	background-color: rgba(35,47,58,0.05);
 
 }
+aside p{
+	font-weight: 600;
+	font-size: 1.25em;
+	background-color: rgb(35,47,58);
+	color: whitesmoke;
+	padding: 0.5rem;
+	margin: 0;
+	text-transform: uppercase;
+	border-bottom: 4px double rgba(0,0,0,0.77);
+	opacity: 0.6;
+}
 
+aside ul li a{
+	text-align: justify;
+	padding: 0;
+	color: rgb(35,47,58);
+	text-decoration: underline;
+}
+
+aside ul{
+	font-size: 0.9em;
+	margin: 1em;
+	padding: 0 0.75em 0 1em;
+}
 /* Table - Concert Schedule Styles */
 #concert-schedule-sec {
-	max-width: 940px;
+	width: 100vw;
 	margin: 0 auto;
 	height: max-content;
+	color: white;
+	background-color: #5585b5;
+	padding: 2em;
+	font-size: 1em;
+	border: 4em;
+	
+	}
+
+	#concert-schedule-sec h3{
+		font-size: 2em;
 	}
 
 /* Form - Ticket Form Styles */
